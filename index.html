@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div class="container-main">
+        <div class="container-calculator">
+            <div class="cabezera">
+                <h1 id="title">Calculator</h1>
+                <div class="container-switch">
+                    <div class="temas">
+                        <p class="tema1">1</p>
+                        <p class="tema2">2</p>
+                        <p class="tema3">3</p>
+                    </div>
+                    <button class="switch dark">
+                        <div class="bolita"></div>
+                    </button>
+                </div>
+            </div>
+            <section class="calculator">
+                <input type="text" id="resultado" readonly value=0>
+                <div class="filas-botones">
+                    <div class="fila">
+                        <button data-num="7"  class="btns" id="siete">7</button>
+                        <button data-num="8" class="btns" id="ocho">8</button>
+                        <button data-num="9" class="btns" id="nueve">9</button>
+                        <button data-operador= "del"class="operaciones btnDelete" id="delete">DEL</button>
+                    </div>
+                    <div class="fila">
+                        <button data-num="4" class="btns" id="cuatro">4</button>
+                        <button data-num="5" class="btns" id="cinco">5</button>
+                        <button data-num="6" class="btns" id="seis">6</button>
+                        <button data-operador="sumar" class="operaciones btns" id="suma">+</button>
+                    </div>
+                    <div class="fila">
+                        <button data-num="1" class="btns" id="uno">1</button>
+                        <button data-num="2" class="btns" id="dos">2</button>
+                        <button data-num="3" class="btns" id="tres">3</button>
+                        <button data-operador="resta" class="operaciones btns" id="resta">-</button>
+                    </div>
+                    <div class="fila">
+                        <button data-puntuacion ="punto" class="btns" id="punto">.</button>
+                        <button data-num="0" class="btns" id="cero">0</button>
+                        <button data-operador="division" class="btns operaciones" id="division">/</button>
+                        <button data-operador="multi" class="operaciones btns" id="multiplicacion">x</button>
+                    </div>
+                    <div class="fila2">
+                        <button data-result="BORRAR" class="btnDelete" id="reset">RESET</button>
+                        <button data-result="igual" class="btnResult" id="igual">=</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer1">
+                <h4 class="autor"><a href="https://github.com/Lomchas" target="_blank">Daniel Andres Losada
+                        Restrepo</a>
+                </h4>
+                <h4>Reto#2 - Sprint#1 - fase #2</h4>
+                <h4><a href="https://app.academiageek.co/signin" target="_blank">ACADEMIA GEEK ®</a></h4>
+            </div>
+        </footer>
+    </div>
+    <script src="./Script/themes.js"></script>
+    <script src="./Script/main.js"></script>
+</body>
+
+</html>
